@@ -1,16 +1,44 @@
+"use strict"
 import React from 'react';
-import UserList from '../containers/user-list';
-import UserDetails from '../containers/user-detail';
-require('../../scss/style.scss');
+import UsersList from '../containers/user-list'
+import UserDetail from '../containers/user-details';
+import MoviesList from '../containers/movie-list'
+// require('../../scss/style.css');
 
 const App = () => (
-    <div>
-        <h2>User List</h2>
-        <UserList />
-        <hr />
-        <h2>User Details</h2>
-        <UserDetails />
-    </div>
-);
+	<div>
+		<h1>Users</h1>
+		<UsersList />
+		<hr />
+		<h2>User Details</h2>
+		<UserDetail />
+		<hr />
+		<h1>Movies</h1>
+		<MoviesList />
+		<hr />
+		<h2>Movies Details</h2>
+	</div>
+	);
 
+// class App extends React.Component {
+
+// 	constructor(props) {
+// 		super(props);
+// 	}
+// 	render() {
+// 		return (
+// 			<div>
+// 				<h1>Users</h1>
+// 				<UsersList />
+// 				<hr />
+// 				<h2>User Details</h2>
+// 				<hr />
+// 				<h1>Movies</h1>
+// 				<MoviesList />
+// 				<hr />
+// 				<h2>Movies Details</h2>
+// 			</div>
+// 			);
+// 	}
+// }
 export default App;

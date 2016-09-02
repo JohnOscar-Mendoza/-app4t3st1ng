@@ -1,7 +1,9 @@
+// Functions are called action creator
+// Actions are the return values from the action creator
+"use strict";
 export const selectUser = (user) => {
-    console.log("You clicked on user: ", user.first);
-    return {
-        type: 'USER_SELECTED',
-        payload: user
-    }
+	return {
+		type: "USER_SELECTED",
+		payload: user
+	}
 };
